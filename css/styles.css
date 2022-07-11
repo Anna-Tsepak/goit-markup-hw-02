@@ -11,13 +11,13 @@
 --title-text-color:#212121;
 --accent-color:#2196F3;
 --white-color:#FFFFFF;
---title-backgraund-color:#F5F4FA;
+--title-backgraund-color:#E5E5E5;
 
 
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color:var(--title-backgraund-color);
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color)
     
@@ -145,7 +145,7 @@ color:var(--white-color)
         line-height : 1.6;
         letter-spacing: 0.03em;
         cursor : pointer;
-        background-color: var(--title-backgraund-color)
+        background-color:#F5F4FA;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
