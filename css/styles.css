@@ -33,7 +33,10 @@ body {
 
 /* header */
 .header {
-    background-color: var(--header-backgraund-color);
+    background-color:var(--white-color);
+}
+.header-portfolio {
+   background-color:var(--header-backgraund-color);
 }
 
 .logo,
