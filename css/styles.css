@@ -5,73 +5,113 @@
 /* білий #FFFFFF */
 /* лого: чорний #000000
 блакитний #2196F3 */
+/* Кольори секцій:
+header #ECECEC
+futter #2F303A
+midle: сіра #757575
+світла- #E5E5E5
+ */
 
-:root{
---primary-text-color:#757575;
---title-text-color:#212121;
---accent-color:#2196F3;
---white-color:#FFFFFF;
---title-backgraund-color:#E5E5E5;
-
-
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --header-backgraund-color: #ECECEC;
+    --hero-futter-color: #2F303A;
+    --comanda-color: #F5F4FA;
 }
 
 body {
-    background-color:var(--title-backgraund-color);
     font-family: Roboto, sans-serif;
-    color: var(--primary-text-color)
-    
-   
+
 }
 
-.list {list-style: none;}
-
-
+.list {
+    list-style: none;
+}
 
 /* header */
-.logo { font-family: Raleway, sans-serif;
-    font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em
+.header {
+    background-color: var(--header-backgraund-color);
 }
 
+.logo,
+.logo-futter,
+.logo-heard {
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.logo-futter {
+    color: var(--white-color);
+}
+
+.logo-heard {
+    color: #000000;
+}
 
 .site-nav a {
-    color:var(--title-text-color);
+    text-decoration: none;
+    color: var(--title-text-color);
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em
 }
+
+.studio {
+    color: var(--accent-color);
+}
+
+.portfolio-name {
+    color: var(--accent-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color:var(--accent-color);
+    color: var(--accent-color);
 
 }
 
 .auth-nov .link {
+    text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em
 }
+
 .auth-nov .link:hover,
-.auth-nov .link:focus{
-    color:var(--accent-color);
+.auth-nov .link:focus {
+    color: var(--accent-color);
 }
+
 /* Основний текст */
+.hero {
+    background-color: var(--hero-futter-color);
+}
 
 .hero-title {
+    text-transform: uppercase;
     color: var(--white-color);
     font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em
 }
 
 .hero-button {
+    font-family: inherit;
     cursor: pointer;
     color: var(--white-color);
     font-weight: 700;
@@ -79,88 +119,125 @@ body {
     line-height: 1.9;
     letter-spacing: 0.06em
 }
+
 .hero-button:hover,
-.hero-button:focus
-{ background-color: var(--accent-color);}
+.hero-button:focus {
+    background-color: var(--accent-color);
+}
 
 /* Маркетинг */
 
 .marketyng-title {
+    text-transform: uppercase;
     color: var(--title-text-color);
     font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 }
+
 .marketyng-text {
     color: var(--primary-text-color);
-        font-size: 14px;
-        line-height: 2;
-        letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
 }
 
 .section {
     color: var(--title-text-color);
     font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em
 }
 
 /* Comanda */
+.comanda {
+    background-color: #F5F4FA;
+}
+
 .comanda-name {
     color: var(--title-text-color);
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        letter-spacing: 0.03em
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em
 }
+
 .comanda-work {
     color: var(--primary-text-color);
-        font-size: 16px;
-        line-height: 1.18;
-        letter-spacing: 0.03em
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em
 }
 
 /* Futter */
-.address .link {
-color:var(--white-color)
+.futter {
+    background-color: var(--hero-futter-color);
+
 }
 
-.link {
-    font-size: 14px;
-        line-height: 2;
-        letter-spacing: 0.03em
+.address .link {
+
+    color: var(--white-color)
 }
+
+.link,
+.contact-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em
+}
+
 .address .link:hover,
-.address .link:focus
-{ color:var(--accent-color) ;}
+.address .link:focus {
+    color: var(--accent-color);
+}
+
+.address {
+    font-style: normal;
+
+}
+
+.contact-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address .contact-link:hover,
+.address .contact-link:focus {
+    color: var(--accent-color);
+}
 
 /* Портфоліо */
 
 .portfolio-button {
+    font-family: inherit;
     color: var(--title-text-color);
     font-weight: 500;
-        font-size: 16px;
-        line-height : 1.6;
-        letter-spacing: 0.03em;
-        cursor : pointer;
-        background-color:#F5F4FA;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background-color: var(--title-backgraund-color)
 }
+
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
+
 .examples {
     color: var(--title-text-color);
     font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em
 }
+
 .examples-work {
- color: var(--primary-text-color);
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
